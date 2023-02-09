@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박소영❤️김재연 우리 결혼해요</title>
+    <style>
+      /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* body태그 자체에 css 요소 부여 */
+        body {
+	        font-family: "LeeSeoyun";
+	        margin: 0;
+	        display: flex;
+	        justify-content: center;
+        }
+
+        .photos {
+            margin-top: 30px;
+        }
+
+        .photo-frame {
+            background-color: gray;
+            margin: 15px 20px;
+            height: 550px;
+
+            background-size: cover;
+            position: relative;
+        }
+
+        .photo-frame2 {
+            background-color: gray;
+            margin: 15px 20px;
+            height: 300px;
+
+            background-size: cover;
+            position: relative;
+        }
+
+        .photo-frame3 {
+            background-color: gray;
+            margin: 15px 20px;
+            height: 200px;
+
+            background-size: cover;
+            position: relative;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-title {
+            color: pink;
+            font-size: 25px;
+            font-weight: 900;
+        }
+        .f-date {
+            color: pink;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        #image1 {
+            background-image: url('./image1.png')
+        }
+
+        #image2 {
+            background-image: url('./image2.png')
+        }
+
+        #image3 {
+            background-image: url('./image3.png')
+        }
+
+        #image4 {
+            background-image: url('./image4.png')
+        }
+
+        .photo_description {
+            color: white;
+            background-color: black;
+
+            width: fit-content;
+            padding: 0 20px;
+            margin-bottom: 10px;
+
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            
+            transform: translate(-50%);
+            left: 50%;
+
+            opacity: 0;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+    <script>
+        // 텍스트가 보여지는 기능
+        // 1. 몇 번째 사진에 마우스가 올라갔는지 확인(if문)
+        // 2. 해당 사진을 찾아 hideText class를 지워주고, showText는 삽입해줌
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">
+                <span id="desc1" class="photo_description">
+                </span>
+            </div>
+            <div id="image2" class="photo-frame">
+                <span id="desc2" class="photo_description">
+                </span>
+            </div>
+            <div id="image3" class="photo-frame">
+                <span id="desc3" class="photo_description">
+                </span>
+            </div>
+            <div id="image4" class="photo-frame2">
+                <span id="desc3" class="photo_description"> 
+                </span>
+            </div>
+            <div class="photo-frame3">
+                <iframe
+		        src="https://www.youtube.com/embed/KsutJfCKzpg"
+                frameborder="0"
+                class="video"
+	            ></iframe>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">Just Married</p>
+            <p class="f-date">2023.04.15.</p>
+        </div>
+    </div>
+</body>
+</html>
